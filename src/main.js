@@ -7,6 +7,7 @@ import { addMovies, addTvShow } from "../functions/addTrendingsFunction.js";
 import { locateToMoviePage } from "../functions/toMovies.js";
 import { toggleSearch, fetchSearchData } from "../functions/search.js";
 
+
 if (window.location.pathname.includes("index.html")) {
     addMovies();
     addTvShow();
