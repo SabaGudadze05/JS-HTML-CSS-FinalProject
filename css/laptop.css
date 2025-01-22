@@ -1,0 +1,87 @@
+/* 1439px - 769px */
+@media (max-width: 1181px) {
+    /* header */
+    header {
+        padding: 16px 32px;
+    }
+    .burger {
+        display: block;
+        font-size: 32px;
+        color: rgba(5, 188, 202, 1);
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .burger:active {
+        transform: rotate(90deg);
+    }
+    .x-icon {
+        display: block;
+        font-size: 32px;
+        color: rgba(5, 188, 202, 1);
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .x-icon:active {
+        transform: rotate(-90deg);
+    }
+    .none {
+        display: none;
+    }
+    .header_nav {
+        /* display: none; */
+        position: fixed;
+        top: 98px;
+        left: -250px;
+        background-color: rgba(196, 106, 43, 1);
+        width: 200px;
+        padding: 16px;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+    .header_nav_ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    /* section1 */
+
+    /* section_two */
+    .section_two {
+        padding: 96px 0 96px 32px;
+    }
+    .section_two_cards_section {
+        overflow-x: scroll;
+    }
+    .card_article_index {
+        flex: 1 0 272px;
+        padding: 0 0 16px;
+        gap: 24px;
+    }
+    .card_article_index_section {
+        margin-inline: 8px;
+    }
+    /* catalog page */
+    /* catalog secction one */
+    .catalog_section_one {
+        padding: 96px 32px;
+    }
+
+    .catalog_card_section_article {
+        flex: 0 1 30%;
+    }
+    /* contact page */
+
+    /* section_one */
+    .contact_section_one {
+        padding-inline: 32px;
+    }
+    .main_section {
+        width: 100%;
+    }
+    /* formsection */
+    .form_section {
+        width: 100%;
+    }
+    .map_section {
+        width: 100%;
+    }
+}
