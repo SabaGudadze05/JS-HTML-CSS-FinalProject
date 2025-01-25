@@ -23,7 +23,7 @@ loadMoreButton.addEventListener("click", () => {
 });
 
 // Search Input toggling
-const searchButton = document.getElementById("search_button");
+const searchButton = document.getElementById("input_section");
 const searchResult = document.getElementById("search_results");
 toggleSearch(searchButton, searchResult);
 
