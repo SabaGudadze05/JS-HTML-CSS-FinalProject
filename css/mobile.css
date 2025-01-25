@@ -2,6 +2,9 @@
     header {
         padding: 28px 20px;
     }
+    .header_nav{
+        top: 122px;
+    }
 }
 
 /* 480px- 320px */
