@@ -33,7 +33,7 @@ export function addMoviesToCatalog(sortBy = "day") {
 
                 movieCard.innerHTML = `
                             <img src="https://image.tmdb.org/t/p/w500${movieBackground}" alt=""
-                            class="catalog_card_section_article_img" />
+                            class="catalog_card_section_article_img"  />
                 </section>
                 <section class="catalog_card_section_article_section">
                     <p class="catalog_card_name">${movie.title}</p>
@@ -47,6 +47,15 @@ export function addMoviesToCatalog(sortBy = "day") {
                         </section>
                 </section>
                 `;
+
+                movieCard.addEventListener("click", () => {
+                    localStorage.setItem(
+                        "selectedMovie",
+                        JSON.stringify(movie)
+                    );
+                    window.location.href = "../contact.html";
+                });
+
                 movieContainer.appendChild(movieCard);
             });
         });

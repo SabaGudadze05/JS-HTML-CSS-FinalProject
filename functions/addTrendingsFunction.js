@@ -34,6 +34,13 @@ function addMovies() {
             </section>
         </section>
         `;
+        movieArticle.addEventListener("click", () => {
+            localStorage.setItem(
+                "selectedMovie",
+                JSON.stringify(movie)
+            );
+            window.location.href = "../contact.html";
+        });
                 trendingMovies.appendChild(movieArticle);
             }
         });
@@ -75,6 +82,13 @@ function addTvShow() {
                 </section>
                     
                 `;
+                article.addEventListener("click", () => {
+                    localStorage.setItem(
+                        "selectedMovie",
+                        JSON.stringify(tvShow)
+                    );
+                    window.location.href = "../contact.html";
+                });
                 trendingTvShows.appendChild(article);
             }
         });
