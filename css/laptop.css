@@ -32,7 +32,10 @@
         position: fixed;
         top: 98px;
         left: -250px;
-        background-color: rgba(196, 106, 43, 1);
+        border-bottom: 2px solid rgba(5, 188, 202, 1);
+        border-right: 2px solid rgba(5, 188, 202, 1);
+        border-bottom-right-radius: 10px;
+        background-color: rgba(44, 66, 70, 1);
         width: 200px;
         padding: 16px;
         z-index: -1;

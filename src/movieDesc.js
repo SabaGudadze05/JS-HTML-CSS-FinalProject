@@ -1,3 +1,5 @@
+import { burgerToggle } from "../functions/burger.js";
+
 const apiKey = "5ff9240d003a5ddeb86b9c021912afba";
 
 const localStorageMovie = JSON.parse(localStorage.getItem("selectedMovie"));
@@ -103,3 +105,9 @@ fetch(
             castMembers.appendChild(actor);
         }
     });
+
+// Burger
+const burger = document.querySelector("#burger");
+
+burger.addEventListener("click", burgerToggle);
+

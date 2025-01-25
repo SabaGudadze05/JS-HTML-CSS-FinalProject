@@ -4,7 +4,7 @@ import {
     loadMoreMovies,
     resetPages,
 } from "../functions/addMoviesToCatalog.js";
-
+import { burgerToggle } from "../functions/burger.js";
 
 addMoviesToCatalog();
 // Sorting
@@ -36,3 +36,8 @@ searchInput.addEventListener("input", (e) => {
         fetchSearchData(searchValue);
     }, 500);
 });
+
+// Burger
+const burger = document.querySelector("#burger");
+
+burger.addEventListener("click", burgerToggle);
