@@ -53,7 +53,7 @@ export function addMoviesToCatalog(sortBy = "day") {
                         "selectedMovie",
                         JSON.stringify(movie)
                     );
-                    window.location.href = "../contact.html";
+                    window.location.href = "contact.html";
                 });
 
                 movieContainer.appendChild(movieCard);

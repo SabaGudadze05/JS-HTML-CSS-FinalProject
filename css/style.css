@@ -17,11 +17,7 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     padding-top: 96px;
 }
-.container::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-}
-.container
+
 /* header. for indexn for contact, for catalog */
 header {
     background-color: #09090b;
@@ -95,6 +91,7 @@ header {
     font-size: 18px;
     font-weight: 400;
     background-color: transparent;
+    color: #05bcca;
 }
 
 .header_icons_section i {
@@ -128,7 +125,7 @@ header {
     overflow: hidden;
     overflow-y: scroll;
     max-height: 500px;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
 }
 .search_results::-webkit-scrollbar {
     width: 8px;
@@ -225,52 +222,9 @@ header {
         background-image: url(../imgs/5823011-1920x1300-desktop-hd-deadpool-wolverine-comics-background-image.jpg);
     }
 }
-.section_one_section {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    cursor: pointer;
-}
-.section_one_section_a {
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 36px;
-    color: rgba(255, 255, 255, 1);
-    transition: all 0.3s linear;
-}
-.section_one_section_a_span {
-    color: rgba(5, 188, 202, 1);
-    transition: all 0.3s linear;
-}
-.section_one_button {
-    width: 36px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(196, 106, 43, 1);
-    font-size: 14px;
-    color: rgba(217, 217, 217, 1);
-    cursor: pointer;
-    transition: all 0.3s linear;
-}
-.section_one_section:hover .section_one_section_a {
-    color: rgba(5, 188, 202, 1);
-    letter-spacing: 3px;
-}
-.section_one_section:hover .section_one_section_a_span {
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 3px;
-}
-.section_one_section:hover .section_one_button {
-    background-color: rgba(217, 217, 217, 1);
-    color: rgba(196, 106, 43, 1);
-    width: 44px;
-    font-size: 20px;
-}
+
+
+
 /* section_two */
 .section_two {
     padding: 96px 94px;
@@ -472,32 +426,6 @@ hr {
     gap: 64px;
     position: relative;
 }
-
-/* .catalog_section_one_sort_section {
-    display: flex;
-    justify-content: space-between;
-} */
-/* .filter_section {
-    display: flex;
-    gap: 16px;
-} */
-/* .filter {
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    color: rgba(217, 217, 217, 1);
-}
-.filter_icon {
-    color: rgba(217, 217, 217, 1);
-    font-size: 32px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-} */
-/* .filter_icon:hover {
-    color: rgba(5, 188, 202, 1);
-    transform: scale(1.05);
-} */
 .sort_section {
     display: flex;
     gap: 32px;
@@ -509,18 +437,11 @@ hr {
     line-height: 32px;
     color: rgba(217, 217, 217, 1);
 }
-/* .sort_icon {
-    font-size: 24px;
-}
-.sort_icon_none {
-    display: none;
-} */
+
 /* responsive_button */
 .sort_options {
     display: flex;
     align-items: center;
-    /* gap: 33px; */
-    /* padding: 8px; */
     width: 160px;
     height: 32px;
     background-color: rgba(161, 195, 201, 1);
@@ -548,15 +469,7 @@ hr {
 .catalog_card_section {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 40px 20px;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 400px);
-    grid-template-areas:
-        "one two three"
-        "four five six"
-        "seven eight nine"; */
 }
 .catalog_card_section_article {
     flex: 0 0 32%;
@@ -566,7 +479,7 @@ hr {
     background-color: rgba(44, 66, 70, 1);
     cursor: pointer;
     transition: all 0.3s ease;
-    animation: shadow 10s infinite linear;
+    border: 2px solid #05bcca;
 }
 .catalog_card_section_article:hover {
     opacity: 0.8;
@@ -591,7 +504,6 @@ hr {
     flex-direction: column;
     gap: 16px;
 }
-/* გამოვიყენე ფედინგი იმის გამო რომ შიდა ელემენტები შემომეწია შიგნით.სექცია არ დამიშორებია არტიკლისთვის <3 */
 .add_cart_button {
     width: 80px;
     height: 27px;
@@ -791,7 +703,7 @@ hr {
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    width: 200px;
+    width: 150px;
     border: 1px solid #05bcca;
     padding-bottom: 20px;
     gap: 10px;
@@ -803,6 +715,10 @@ hr {
 .actor img {
     width: 100%;
     height: 150px;
+}
+.actor h5{
+    margin-left: 10px;
+    text-wrap: wrap;
 }
 .cast_members::-webkit-scrollbar {
     height: 8px;

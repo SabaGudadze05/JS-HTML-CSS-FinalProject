@@ -39,7 +39,7 @@ function addMovies() {
                 "selectedMovie",
                 JSON.stringify(movie)
             );
-            window.location.href = "../contact.html";
+            window.location.href = "contact.html";
         });
                 trendingMovies.appendChild(movieArticle);
             }
@@ -87,7 +87,7 @@ function addTvShow() {
                         "selectedMovie",
                         JSON.stringify(tvShow)
                     );
-                    window.location.href = "../contact.html";
+                    window.location.href = "contact.html";
                 });
                 trendingTvShows.appendChild(article);
             }

@@ -11,7 +11,7 @@
         cursor: pointer;
         transition: all 0.5s ease;
     }
-    .burger:active {
+    .rotate {
         transform: rotate(90deg);
     }
     .x-icon {
@@ -37,6 +37,9 @@
         padding: 16px;
         z-index: -1;
         transition: all 0.5s ease;
+    }
+    .show {
+        left: 0;
     }
     .header_nav_ul {
         flex-direction: column;

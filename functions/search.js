@@ -6,7 +6,6 @@ export function toggleSearch(butt, searchResult) {
 
         inputSec.classList.add("width_for_section");
         searchInput.classList.remove("active_search_input");
-        searchResult.classList.add("appear_class");
 
         event.stopPropagation();
 
@@ -36,6 +35,9 @@ export function fetchSearchData(movieName) {
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
+            document
+                .getElementById("search_results")
+                .classList.add("appear_class");
             const searchResultUl = document.getElementById("search_results_ul");
 
             searchResultUl.innerHTML = "";
@@ -54,6 +56,13 @@ export function fetchSearchData(movieName) {
                         <p>${movie.overview}</p>
                     </section>
                 `;
+                    movieLi.addEventListener("click", () => {
+                        localStorage.setItem(
+                            "selectedMovie",
+                            JSON.stringify(movie)
+                        );
+                        window.location.href = "contact.html";
+                    });
                     searchResultUl.appendChild(movieLi);
                 }
             }

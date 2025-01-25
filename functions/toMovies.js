@@ -1,3 +1,3 @@
 export function locateToMoviePage() {
-    window.location.href = "../catalog.html";
+    window.location.href = "catalog.html";
 }

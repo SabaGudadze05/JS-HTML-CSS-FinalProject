@@ -56,6 +56,12 @@
         flex-direction: column;
         row-gap: 48px;
     }
+    .thumbnail_section {
+        width: 100%;
+    }
+    .movie_description {
+        width: 100%;
+    }
     .form_section {
         gap: 24px;
     }
