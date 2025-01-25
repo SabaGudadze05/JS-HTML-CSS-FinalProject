@@ -355,7 +355,7 @@ footer {
 .footer_headers_section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 4px;
 }
 .footer_headers {
@@ -399,19 +399,20 @@ hr {
 .social_links {
     font-size: 32px;
     color: rgba(217, 217, 217, 1);
-    transition: all 0.3s ease;
 }
 .facebook:hover {
     color: rgba(66, 103, 178, 1);
-    filter: drop-shadow(4px 4px 4px rgba(66, 103, 178, 1));
 }
 .instagram:hover {
-    color: rgba(252, 204, 99, 1);
-    filter: drop-shadow(4px 4px 4px rgba(252, 204, 99, 1));
+    display: inline-block;
+    font-weight: bold;
+    color: #833ab4; /* Fallback solid color */
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .whatsapp:hover {
     color: rgba(37, 211, 102, 1);
-    filter: drop-shadow(4px 4px 4px rgba(37, 211, 102, 1));
 }
 
 /* catalog page */
